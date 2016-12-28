@@ -1,0 +1,5 @@
+parameters:
+    units: metric
+    base_endpoint: http://api.openweathermap.org/data/2.5/weather
+    appid: 86723fd6d8b585f6ec7ab1a329dc6622
+    cities: ['Bogota', 'Medellin', 'Cali', 'Miami']    
