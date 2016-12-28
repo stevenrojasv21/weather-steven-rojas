@@ -42,8 +42,14 @@ class WeatherController extends Controller {
         $client = new \GuzzleHttp\Client();
         $res = $client->request('GET', $url);
         $statusCode = $res->getStatusCode();
-        $response = $res->getBody();
-        return new JsonResponse($response, $statusCode, array(), true);
+        $responseAPI = $res->getBody();
+        $response = new JsonResponse($responseAPI, $statusCode, array(), true);
+        // cache for 3600 seconds
+        $response->setSharedMaxAge(3600);
+
+        // (optional) set a custom Cache-Control directive
+        $response->headers->addCacheControlDirective('must-revalidate', true);
+        return $response;
     }
     
     /*
@@ -54,7 +60,13 @@ class WeatherController extends Controller {
     * @return (JSON) Return a JSON String with the cities.
     */
     public function getCitiesAction() {
-        return new JsonResponse($this->container->getParameter('cities'));
+        $response = new JsonResponse($this->container->getParameter('cities'));
+        // cache for 3600 seconds
+        $response->setSharedMaxAge(3600);
+
+        // (optional) set a custom Cache-Control directive
+        $response->headers->addCacheControlDirective('must-revalidate', true);
+        return $response;
     }
 
 }
