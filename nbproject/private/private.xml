@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/weather/app/config/config.yml</file>
+            <file>file:/C:/xampp/htdocs/weather/app/config/routing_dev.yml</file>
+            <file>file:/C:/xampp/htdocs/weather/composer.json</file>
+            <file>file:/C:/xampp/htdocs/weather/src/WeatherBundle/Resources/config/services.yml</file>
+            <file>file:/C:/xampp/htdocs/weather/app/config/parameters.yml</file>
+            <file>file:/C:/xampp/htdocs/weather/app/AppKernel.php</file>
+            <file>file:/C:/xampp/htdocs/weather/src/WeatherBundle/Resources/config/config.yml</file>
+            <file>file:/C:/xampp/htdocs/weather/src/AppBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/xampp/htdocs/weather/app/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/weather/src/AppBundle/AppBundle.php</file>
+            <file>file:/C:/xampp/htdocs/weather/src/WeatherBundle/Controller/WeatherController.php</file>
+            <file>file:/C:/xampp/htdocs/weather/src/WeatherBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/weather/app/config/config_dev.yml</file>
+            <file>file:/C:/xampp/htdocs/weather/app/config/config_prod.yml</file>
+        </group>
+    </open-files>
+</project-private>
