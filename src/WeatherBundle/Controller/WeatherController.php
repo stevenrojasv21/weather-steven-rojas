@@ -14,7 +14,6 @@ use Symfony\Component\HttpFoundation\Request;
    * WeatherController
    * 
    * This class does requests to the Weather API and returns this information in JSON format.
-   * @namespace  WeatherBundle\Controller 
    */
 
 class WeatherController extends Controller {
@@ -35,6 +34,10 @@ class WeatherController extends Controller {
         }
         $base_endpoint = $this->container->getParameter('base_endpoint');
         $appid = $this->container->getParameter('appid');
+        //Validate if the city is into the array cities
+        if (array_search(strtolower($city), array_map('strtolower', $this->container->getParameter('cities'))) === false) {
+            return new JsonResponse('City Not Found', '404', array(), true);
+        }
         $url = "$base_endpoint?q=$city&appid=$appid&units=$units";
         $client = new \GuzzleHttp\Client();
         $res = $client->request('GET', $url);

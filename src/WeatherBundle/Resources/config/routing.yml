@@ -1,7 +1,3 @@
-weather_homepage:
-    path:     /
-    defaults: { _controller: WeatherBundle:Default:index }
-    
 api_weather_cities:
     path:     /weather/cities/
     defaults: { _controller: WeatherBundle:Weather:getCities }
