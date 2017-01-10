@@ -2,7 +2,7 @@ weather
 .config(function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'WeatherBundle/weatherPanel/weatherPanel.tpl.html'
+            templateUrl: 'WeatherBundle/WeatherPanel/weatherPanel.tpl.html'
             ,controller: 'WeatherCtrl'
             ,resolve: {
                 $b: ["$q", "WeatherService",
